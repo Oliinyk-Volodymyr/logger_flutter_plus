@@ -45,6 +45,8 @@ class _LogConsoleContentState extends State<LogConsoleContent> {
 
   @override
   Widget build(BuildContext context) {
+    final theme = Theme.of(context);
+
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: SizedBox(
