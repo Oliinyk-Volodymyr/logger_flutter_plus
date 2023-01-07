@@ -1,3 +1,9 @@
+## 1.0.5
+- add clear button
+- make text selectable
+- remove copy content on long press
+## 1.0.4
+- add copy content on long press
 ## 1.0.3
 - fixed theme
 ## 1.0.2

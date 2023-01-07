@@ -35,6 +35,11 @@ class LogConsoleManager extends ChangeNotifier {
     notifyListeners();
   }
 
+  void clearLogs() {
+    _buffer.clear();
+    notifyListeners();
+  }
+
   void addLog(OutputEvent event) {
     final text = event.lines.join('\n');
     _ansiParser.parse(text);

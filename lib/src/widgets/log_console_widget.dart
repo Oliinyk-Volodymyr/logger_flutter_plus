@@ -84,6 +84,9 @@ class _LogConsoleWidgetState extends State<LogConsoleWidget> {
                   _logFontSize++;
                 });
               },
+              onClearLogs: () {
+                widget.logConsoleManager.clearLogs();
+              }
             ),
             Expanded(
               child: LogConsoleContent(

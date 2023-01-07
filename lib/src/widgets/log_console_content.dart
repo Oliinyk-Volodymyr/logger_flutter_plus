@@ -52,7 +52,7 @@ class _LogConsoleContentState extends State<LogConsoleContent> {
         child: ListView.builder(
           key: PageStorageKey('LogConsoleContent'),
           controller: widget.scrollController,
-          itemBuilder: (context, index) => Text.rich(
+          itemBuilder: (context, index) => SelectableText.rich(
             widget.logConsoleManager.logs[index].span,
             key: ValueKey(widget.logConsoleManager.logs[index].id),
             style:

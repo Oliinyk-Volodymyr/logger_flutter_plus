@@ -7,6 +7,7 @@ class LogConsoleAppBar extends StatelessWidget {
     this.showCloseButton = true,
     required this.onIncreaseFontSize,
     required this.onDecreaseFontSize,
+    required this.onClearLogs,
     required this.theme,
   });
 
@@ -14,6 +15,7 @@ class LogConsoleAppBar extends StatelessWidget {
 
   final VoidCallback onDecreaseFontSize;
   final VoidCallback onIncreaseFontSize;
+  final VoidCallback onClearLogs;
   final LogConsoleTheme theme;
 
   @override
@@ -40,6 +42,10 @@ class LogConsoleAppBar extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.remove),
             onPressed: onDecreaseFontSize,
+          ),
+          IconButton(
+            icon: Icon(Icons.clear_all),
+            onPressed: onClearLogs,
           ),
           if (showCloseButton)
             IconButton(
