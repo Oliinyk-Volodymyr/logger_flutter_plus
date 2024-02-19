@@ -29,7 +29,7 @@ class DefaultShakeDetector implements ShakeDetector {
   int _lastShakeTimestamp = DateTime.now().millisecondsSinceEpoch;
   StreamSubscription? _streamSubscription;
 
-  /// Starts listening to accerelometer events
+  /// Starts listening to accelerometer events
   @override
   void startListening() {
     stopListening();

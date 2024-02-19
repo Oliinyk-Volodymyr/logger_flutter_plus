@@ -43,8 +43,8 @@ class LogConsoleBottomBar extends StatelessWidget {
                 value: null,
               ),
               DropdownMenuItem(
-                child: Text("VERBOSE"),
-                value: Level.verbose,
+                child: Text("TRACE"),
+                value: Level.trace,
               ),
               DropdownMenuItem(
                 child: Text("DEBUG"),
@@ -63,8 +63,8 @@ class LogConsoleBottomBar extends StatelessWidget {
                 value: Level.error,
               ),
               DropdownMenuItem(
-                child: Text("WTF"),
-                value: Level.wtf,
+                child: Text("FATAL"),
+                value: Level.fatal,
               )
             ],
             onChanged: onChangedFilterLevel,

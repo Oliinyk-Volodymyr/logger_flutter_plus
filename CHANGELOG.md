@@ -1,3 +1,5 @@
+## 1.1.0
+- update dependencies
 ## 1.0.5
 - add clear button
 - make text selectable

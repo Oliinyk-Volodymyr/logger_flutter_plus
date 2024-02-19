@@ -5,19 +5,12 @@
 .iml
 
 .flutter-plugins-dependencies
+.flutter-plugins
 example/.flutter-plugins-dependencies
-
-.fvm/flutter_sdk
 
 .packages
 .pub/
+/build/
 
-build/
-ios/
-android/
-demo/
-
-pubspec.lock
-doc/
-.flutter-plugins-dependencies
-example/.flutter-plugins-dependencies
+# FVM Version Cache
+.fvm/

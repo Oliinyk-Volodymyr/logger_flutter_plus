@@ -8,7 +8,7 @@ abstract class ShakeDetector {
   abstract final int shakeCountResetTime;
   abstract final int minShakeCount;
 
-  /// Starts listening to accerelometer events
+  /// Starts listening to accelerometer events
   void startListening();
 
   /// Stops listening to accelerometer events
