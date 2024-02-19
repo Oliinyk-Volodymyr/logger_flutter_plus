@@ -42,7 +42,7 @@ class AppLogOutput extends LogOutput {
   }
 
   @override
-  void destroy() {
+  Future<void> destroy() async {
     logConsoleManager.dispose();
     super.destroy();
   }
@@ -55,9 +55,9 @@ void log(Logger logger, Logger loggerNoStack) {
 
   loggerNoStack.w("Just a warning!");
 
-  logger.e("Error! Something bad happened", "Test Error");
+  logger.e("Error! Something bad happened", error: "Test Error");
 
-  loggerNoStack.v({"key": 5, "value": "something"});
+  loggerNoStack.t({"key": 5, "value": "something"});
 
   Future.delayed(const Duration(seconds: 5), () => log(logger, loggerNoStack));
 }
